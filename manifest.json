@@ -1,0 +1,13 @@
+e {
+	"manifest_version": 3,
+	"name": "全角スペースハイライト",
+	"version": "1.0",
+	"description": "全角スペースをハイライト表示します",
+	"content_scripts": [
+		{
+			"matches": ["https://app.snowflake.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_end"
+		}
+	]
+}
