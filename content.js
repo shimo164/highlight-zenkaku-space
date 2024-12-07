@@ -1,4 +1,4 @@
-const replacementCharacter = '■';
+const replacementCharacter = '😀';
 const debounceTimeMillisec = 5000;
 const targetClass = '.cm-line';
 
@@ -32,7 +32,7 @@ function initObserver() {
         mutations.forEach((mutation) => {
             if (mutation.type === 'childList') {
                 const cmLines = document.querySelectorAll(targetClass);
-                console.log(Number of ${targetClass} elements:, cmLines.length);
+                console.log(`Number of ${targetClass} elements: ${cmLines.length}`);
                 if (cmLines.length > 0) {
                     cmLines.forEach(cmLine => {
                         processNode(cmLine);
